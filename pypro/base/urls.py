@@ -16,7 +16,8 @@ Including another URLconf
 """
 
 
-from pypro.base.views import home
+from os import path
+from pypro.base.views import home, admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
